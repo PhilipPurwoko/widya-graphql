@@ -29,11 +29,12 @@ _Widya Online Course adalah platform belajar online yang menyajikan materi secar
 4. Buka vscode `code .`
 ### :sparkles: Semantic Commit
 Gunakan emoticon untuk semantic commit. Contoh : `git commit -m ":beetle: Fix navbar glitch"`
-Emoticon | Description
----------|------------
-`:beetle:` | Fix Bug
-`:tulip:` | Penambahan pada Frontend
-`:page_facing_up:` | Menambah dokumentasi
-`:robot:` | Menambah otomasi
-`:rocket:` | Deployment
-`:sparkles:` | Lain lain
+Emoji | Code | Description
+------|------|------------
+🐞 | `:beetle:` | Fix Bug
+🌷 | `:tulip:` | Penambahan pada Frontend
+📄 | `:page_facing_up:` | Menambah dokumentasi
+💥 | `:boom:` | Refactor & penghapusan
+🤖 | `:robot:` | Menambah otomasi
+🚀 | `:rocket:` | Deployment
+✨ | `:sparkles:` | Lain lain
