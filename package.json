@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "fastify": "^3.18.1",
+    "fastify": "^3.19.0",
     "mercurius": "^8.0.0"
   }
 }
