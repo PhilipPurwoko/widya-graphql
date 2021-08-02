@@ -1,5 +1,7 @@
-export const schema = `
+import { gql } from 'mercurius-codegen'
+
+export default gql`
 type Query {
-    hello: String
+    fetchCourse(courseId : String!): String
 }
 `
