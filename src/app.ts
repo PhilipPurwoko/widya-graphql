@@ -1,8 +1,9 @@
 import { fastify, FastifyError, FastifyInstance, FastifyReply, FastifyRequest } from 'fastify'
 import { Server, IncomingMessage, ServerResponse } from 'http'
+import { PORT } from './util/config'
 import mercurius from 'mercurius'
-import { schema } from './graphql/schema'
-import { resolvers } from './graphql/resolvers'
+import schema from './graphql/schema'
+import resolvers from './graphql/resolvers'
 
 const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify({ 'logger': false })
 
@@ -31,7 +32,7 @@ app.setErrorHandler((err: FastifyError, _req: FastifyRequest, res: FastifyReply)
     })
 })
 
-app.listen(3000, (err: Error, address: string) => {
+app.listen(PORT, (err: Error, address: string) => {
     console.log(`Server is now listening on ${address}`)
     if (err) throw err
 })
