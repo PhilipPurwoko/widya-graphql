@@ -8,8 +8,8 @@ import resolvers from './graphql/resolvers'
 const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify({ 'logger': false })
 
 app.register(mercurius, {
-    schema,
-    resolvers,
+    schema: schema,
+    resolvers: resolvers,
     graphiql: true
 })
 

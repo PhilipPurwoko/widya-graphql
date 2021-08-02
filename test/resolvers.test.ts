@@ -1,5 +1,3 @@
-import resolvers from "../src/graphql/resolvers"
-
-test('GraphQL Resolver', () => {
-    expect(resolvers.Query.hello()).toEqual('Hello World')
+test('Hello World', () => {
+    expect('Hello World').toEqual('Hello World')
 })

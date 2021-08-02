@@ -23,8 +23,8 @@ const db: Knex = knex({
 
 export default {
     Query: {
-        fetchCourse: async (courseId: string): Promise<string> => {
-            const data = await db('course').select('*').where('c_id', courseId).first()
+        fetchCourse: async (_: unknown, { courseId }: { courseId: string }): Promise<string> => {
+            const data = await db('course').select('*').where('c_id', courseId)
             return JSON.stringify(data)
         }
     }
