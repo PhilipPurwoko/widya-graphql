@@ -17,6 +17,14 @@ _Widya Online Course adalah platform belajar online yang menyajikan materi secar
 - Nodejs - Fastify Web Server
 - MySql - GraphQl Query
 
+## Dokumen
+[Link Dokumen](https://whimsical.com/widya-online-course-EqvMrficQWnY4WwMvGqc3e)
+
+Konten :
+- Dev Stack
+- App Design
+- Wireframe
+
 ## Panduan Developer
 ### :pencil: Pre-requisites
 1. Nodejs
