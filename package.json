@@ -1,38 +1,38 @@
 {
-  "name": "widya",
-  "version": "1.0.0",
-  "description": "Platform Belajar Online",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint src --ext .ts",
-    "test": "jest",
-    "build": "tsc --project src",
-    "debug": "nodemon --exec ts-node src/app.ts",
-    "start": "node dist/app.js"
-  },
-  "keywords": [
-    "Online Course"
-  ],
-  "author": "Philip Purwoko",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/jest": "^26.0.24",
-    "@types/node": "^16.3.0",
-    "@typescript-eslint/eslint-plugin": "^4.28.2",
-    "@typescript-eslint/parser": "^4.28.2",
-    "eslint": "^7.30.0",
-    "jest": "^27.0.6",
-    "nodemon": "^2.0.9",
-    "ts-jest": "^27.0.3",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.5"
-  },
-  "dependencies": {
-    "dotenv": "^10.0.0",
-    "fastify": "^3.18.1",
-    "knex": "^0.95.9",
-    "mercurius": "^8.0.0",
-    "mercurius-codegen": "^1.8.0",
-    "mysql2": "^2.2.5"
-  }
+    "name": "widya",
+    "version": "1.0.0",
+    "description": "Platform Belajar Online",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint src --ext .ts",
+        "test": "jest",
+        "build": "tsc --project src",
+        "debug": "nodemon --exec ts-node src/app.ts",
+        "start": "node dist/app.js"
+    },
+    "keywords": [
+        "Online Course"
+    ],
+    "author": "Philip Purwoko",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^26.0.24",
+        "@types/node": "^16.3.0",
+        "@typescript-eslint/eslint-plugin": "^4.28.2",
+        "@typescript-eslint/parser": "^4.28.2",
+        "eslint": "^7.30.0",
+        "jest": "^27.0.6",
+        "nodemon": "^2.0.9",
+        "ts-jest": "^27.0.3",
+        "ts-node": "^10.0.0",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "fastify": "^3.19.1",
+        "knex": "^0.95.9",
+        "mercurius": "^8.0.0",
+        "mercurius-codegen": "^1.8.0",
+        "mysql2": "^2.2.5"
+    }
 }
