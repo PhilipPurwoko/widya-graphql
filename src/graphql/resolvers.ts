@@ -1,13 +1,11 @@
 import { DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD } from '../util/config'
 import knex, { Knex } from 'knex'
 
-declare module 'knex/types/tables' {
-    interface Course {
-        c_id: string;
-        c_name: string;
-        c_description: string;
-        c_price: number
-    }
+interface Course {
+    c_id: string
+    c_name: string
+    c_description: string
+    c_price: number
 }
 
 const db: Knex = knex({
@@ -23,9 +21,11 @@ const db: Knex = knex({
 
 export default {
     Query: {
-        fetchCourse: async (_: unknown, { courseId }: { courseId: string }): Promise<string> => {
-            const data = await db('course').select('*').where('c_id', courseId)
-            return JSON.stringify(data)
+        fetchCourse: async (): Promise<Course[]> => {
+            return await db('course').select('*')
+        },
+        fetchSingleCourse: async (_: unknown, { courseId }: { courseId: string }): Promise<Course> => {
+            return await db('course').select('*').where<Course[]>('c_id', courseId).then(courses => courses[0])
         }
     }
 }
