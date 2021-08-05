@@ -2,3 +2,6 @@ node_modules
 dist
 coverage
 .env
+*.bak
+
+mercurius-schema.json

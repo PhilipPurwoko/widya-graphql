@@ -1,11 +1,13 @@
 import { fastify, FastifyError, FastifyInstance, FastifyReply, FastifyRequest } from 'fastify'
 import { Server, IncomingMessage, ServerResponse } from 'http'
+import path from 'path'
 import { PORT } from './util/config'
 import mercurius from 'mercurius'
-import schema from './graphql/schema'
+import { loadSchemaFiles } from 'mercurius-codegen/dist/schema'
 import resolvers from './graphql/resolvers'
 
 const app: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify({ 'logger': false })
+const schema: string[] = loadSchemaFiles(path.join(__dirname, 'graphql', 'schema.gql')).schema
 
 app.register(mercurius, {
     schema: schema,

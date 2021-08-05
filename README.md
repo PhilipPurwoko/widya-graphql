@@ -24,7 +24,7 @@ _Widya Online Course adalah platform belajar online yang menyajikan materi secar
 
 [Link Dokumen](https://whimsical.com/widya-online-course-EqvMrficQWnY4WwMvGqc3e)
 
-Konten :
+Konten Dokumen :
 
 -   Dev Stack
 -   App Design
@@ -38,12 +38,17 @@ Konten :
 2. Node Version Manager (NVM Optional - Recommended)
 3. VSCode (Recomended)
 
-### :file_folder: Setup Repository
+### :file_folder: Setup Project
 
 1. Clone / Download repository `git clone https://github.com/PhilipPurwoko/Widya.git`
 2. Masuk ke dalam folder repository `cd Widya`
 3. Install dependency `npm install`
 4. Buka vscode `code .`
+5. Rename file `placeholder.env` menjadi `.env` dan isikan credential
+
+### :books: Database
+
+Gunakan model `database/widya.mwb` dengan MySQL Workbench atau jalankan file `database/widya.sql`
 
 ### :sparkles: Semantic Commit
 
