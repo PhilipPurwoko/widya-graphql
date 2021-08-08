@@ -1,8 +1,9 @@
 type Course {
-    c_id: String
-    c_name: String
-    c_description: String
-    c_price: Int
+    id: String
+    name: String
+    description: String
+    price: Int
+    category: [String]
 }
 
 type Query {

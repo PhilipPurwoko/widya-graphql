@@ -3,5 +3,8 @@ dist
 coverage
 .env
 *.bak
+*~
+*.swp
+*.swo
 
 mercurius-schema.json

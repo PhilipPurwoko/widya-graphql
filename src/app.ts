@@ -1,7 +1,7 @@
 import { fastify, FastifyError, FastifyInstance, FastifyReply, FastifyRequest } from 'fastify'
 import { Server, IncomingMessage, ServerResponse } from 'http'
 import path from 'path'
-import { PORT } from './util/config'
+import { PORT } from './util/env'
 import mercurius from 'mercurius'
 import { loadSchemaFiles } from 'mercurius-codegen/dist/schema'
 import resolvers from './graphql/resolvers'
