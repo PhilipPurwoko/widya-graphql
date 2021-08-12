@@ -1,9 +1,8 @@
 export interface RawCourse {
-    c_id: string
-    c_name: string
-    c_description: string
-    c_price: number
-    category: string
+    id: string
+    name: string
+    description: string
+    price: number
 }
 
 export interface Course {
@@ -12,4 +11,29 @@ export interface Course {
     price: number
     description: string
     category: string[]
+    sections: Section[]
+}
+
+export interface Category {
+    course_id: string
+    name: string
+}
+
+export interface RawSection {
+    id: string
+    course_id: string
+    name: string
+    description: string | null
+}
+
+export interface Section {
+    id: string
+    name: string
+    description: string | null
+    module: string[]
+}
+
+export interface RawModule {
+    course_section_id: string
+    name: string
 }

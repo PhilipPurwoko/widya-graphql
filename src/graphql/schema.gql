@@ -4,9 +4,16 @@ type Course {
     description: String
     price: Int
     category: [String]
+    sections: [Section]
+}
+
+type Section {
+    name: String
+    description: String
+    module: [String]
 }
 
 type Query {
     fetchCourse: [Course]
-    fetchSingleCourse(courseId: String!): Course
+    fetchSingleCourse(courseId: String): Course
 }
