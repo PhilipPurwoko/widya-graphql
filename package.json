@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "fastify": "^3.19.1",
+    "fastify": "^3.19.2",
     "mercurius": "^8.0.0",
     "mercurius-codegen": "^1.8.0",
     "mysql2": "^2.2.5"
