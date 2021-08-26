@@ -34,6 +34,6 @@
         "fastify-cors": "^6.0.2",
         "mercurius": "^8.1.1",
         "mercurius-codegen": "^1.8.0",
-        "mysql2": "^2.2.5"
+        "mysql2": "^2.3.0"
     }
 }
