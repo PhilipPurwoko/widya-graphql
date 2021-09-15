@@ -53,6 +53,7 @@ Gunakan model `database/widya.mwb` dengan MySQL Workbench atau jalankan file `da
 ### :sparkles: Semantic Commit
 
 Gunakan emoticon untuk semantic commit. Contoh : `git commit -m ":beetle: Fix navbar glitch"`
+
 Emoji | Code | Description
 ------|------|------------
 🐞 | `:beetle:` | Fix Bug
