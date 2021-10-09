@@ -30,7 +30,7 @@
     },
     "dependencies": {
         "dotenv": "^10.0.0",
-        "fastify": "^3.21.1",
+        "fastify": "^3.21.3",
         "fastify-cors": "^6.0.2",
         "mercurius": "^8.2.1",
         "mercurius-codegen": "^1.8.0",
