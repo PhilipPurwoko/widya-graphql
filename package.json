@@ -32,7 +32,7 @@
         "dotenv": "^10.0.0",
         "fastify": "^3.21.3",
         "fastify-cors": "^6.0.2",
-        "mercurius": "^8.3.0",
+        "mercurius": "^8.9.1",
         "mercurius-codegen": "^1.8.0",
         "mysql2": "^2.3.0"
     }
